@@ -1,0 +1,31 @@
+//colors
+$color-dark: #3A5F6F;
+$color-cyan: #7ECDC8;
+$color-pink: #F3AFCD;
+$color-shadow: rgba(22, 28, 45, 0.05);
+//colors
+
+//border
+$border: 2px solid $color-dark;
+$border-radius: 14px;
+$border-radius-small: 7px;
+$border-radius-large: 32px;
+//border
+
+//body
+$font-family-base: "Nunito", sans-serif;
+
+$container: 1240;
+$container-width: #{$container}px;
+$container-padding-x: 20px;
+
+$section-padding-y: 80px;
+//body
+
+//button
+$input-height: 64px;
+$button-height: 64px;
+$icon-button-height: 30px;
+
+$transition-duration: 0.3s;
+//button
