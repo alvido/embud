@@ -1,21 +1,24 @@
 //colors
-$color-dark: #3A5F6F;
-$color-cyan: #7ECDC8;
-$color-pink: #F3AFCD;
+$color-dark: #172E58;
+$color-red: #FF364C;
+$color-white: #FFFFFF;
+
 $color-shadow: rgba(22, 28, 45, 0.05);
 //colors
 
 //border
 $border: 2px solid $color-dark;
-$border-radius: 14px;
+$border-radius: 10px;
 $border-radius-small: 7px;
-$border-radius-large: 32px;
+$border-radius-large: 20px;
 //border
 
 //body
-$font-family-base: "Nunito", sans-serif;
 
-$container: 1240;
+
+$font-family-base: "Inter Tight", sans-serif;
+
+$container: 1440;
 $container-width: #{$container}px;
 $container-padding-x: 20px;
 
@@ -24,7 +27,7 @@ $section-padding-y: 80px;
 
 //button
 $input-height: 64px;
-$button-height: 64px;
+$button-height: 90px;
 $icon-button-height: 30px;
 
 $transition-duration: 0.3s;

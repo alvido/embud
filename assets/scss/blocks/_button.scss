@@ -1,47 +1,38 @@
 .button {
     @include reset-button;
-    height: var(--button-height);
+    height: $button-height;
 
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 8px;
 
-    padding: 0 50px;
-    @include fluid-text(20, 16);
-    font-weight: 800;
-    border-radius: var(--border-radius-large);
+    padding: 10px clamp(2.188rem, -3.77rem + 9.31vw, 4.375rem);
+    @include fluid-text(20, 14);
+    font-weight: 600;
+    border-radius: $border-radius;
+    text-transform: uppercase;
 
     color: white;
-    background: black;
-    border: 2px solid black;
+    background: $color-red;
+    border: 2px solid $color-red;
 
     @include hover {
-        color: black;
-        background: white;
-
+        background: $color-dark;
+        border: 2px solid $color-red;
     }
 
-    &--cyan {
-        color: var(--color-light);
-        background: var(--color-cyan);
-        border-color: var(--color-cyan);
 
-        @include hover {
-            color: var(--color-cyan);
-            background: var(--color-light);
-        }
+    @include tablet {
+        height: 55px;
     }
-
     &--alt {
-        font-size: 16px;
-        color: var(--color-dark);
-        background: var(--color-light);
-        border: 2px solid var(--color-dark);
+        @include fluid-text(24, 14);
+        font-weight: 700;
+        background: $color-dark;
 
         @include hover {
-            color: var(--color-light);
-            background: var(--color-dark);
+            background: $color-red;
         }
     }
 }

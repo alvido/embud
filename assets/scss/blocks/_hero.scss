@@ -1,3 +1,51 @@
 .hero {
- background: rebeccapurple;
+
+
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        background: url(../images/banner/banner.png) no-repeat center;
+        background-size: cover;
+        border-radius: 0 0 $border-radius-large $border-radius-large;
+        height: 100vh;
+        min-height: 860px;
+        padding-block: 200px 100px;
+        color: $color-white;
+
+        @include tablet {
+            background-position: -10px;
+            padding-block: 140px 30px;
+        }
+
+        @include phone {
+            min-height: 500px;
+        }
+
+        & h1 {
+            max-width: 1000px;
+        }
+
+        p {
+            margin-top: auto;
+        }
+    }
+
+    & .button {
+        position: absolute;
+        right: 80px;
+        bottom: 40px;
+        max-width: 310px;
+        height: auto;
+        padding-inline: 10px;
+
+        @include tablet {
+            max-width: 210px;
+            bottom: 100px;
+            right: 40px;
+        }
+
+    }
 }

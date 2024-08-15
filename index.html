@@ -12,16 +12,89 @@
     <title>Title</title>
     <link rel="icon" type="image/png" href="assets/images/header/logo.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
     <header class="header">
-        header
+        <div class="header__inner container">
+            <a href="/index.html" class="header__logo logo">
+                ЕМБУД
+            </a>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li><a href="#services">ПОСЛУГИ</a></li>
+                    <li><a href="/projects.html">ПРОЕКТИ</a></li>
+                    <li><a href="#contacts">КОНТАКТИ</a></li>
+                </ul>
+
+                <div class="header__actions actions">
+                    <div class="actions__lang">
+                        <a href="#">УКР</a>
+                        <a href="#">ENG</a>
+                    </div>
+                    <button class="actions__button button">ПОДЗВОНИТИ</button>
+                </div>
+            </nav>
+            <button class="burger button" id="burgerButton">
+                <span>Meню</span>
+            </button>
+        </div>
     </header>
 
     <main class="main">
-        main
+        <section class="hero">
+            <div class="hero__inner container">
+                <h1>СУЧАСНІ Електромонтажні рІШЕННЯ</h1>
+                <p class="subtitle">Наш досвід і знання дозволяють створювати рішення, що повністю відповідають вимогам
+                    сучасності та потребам наших замовників.</p>
+                <button class="button button--alt">Виробництво сонячнИХ панелЕЙ SPT</button>
+            </div>
+        </section>
+        <section class="about">
+            <div class="wrapper container">
+                <h2>ПРО ЕМБУД</h2>
+                <p><b>На ринку України з 2017 року.</b> Основна сфера діяльності ектромонтажні роботи, монтаж та
+                    встановлення
+                    силового обладнання, внутрішнього електропостачання,
+                    мереж зовнішнього освітлення та декоративної підсвітки фасадів.
+                    Встановлюємо та налагоджуємо системи автоматизації та диспетчеризації інженерних систем.
+                    <br><br>
+                    <b>З 2024 року</b> – виробники сонячних панелейНаша компанія орієнтована на забезпечення доступності
+                    автономних електричних систем та підвищення екологічності. Ми розробляємо та впроваджуємо
+                    інноваційні рішення для максимальної ефективності використання сонячної енергії, роблячи її
+                    доступною для кожного.
+                </p>
+            </div>
+        </section>
+        <section class="production">
+            <div class="production__inner container">
+                <h2>ВИРОБНИЦТВО СОНЯЧНИХ ПАНЕЛЕЙ</h2>
+                <a class="button">ПЕРЕГЛЯНУТИ</a>
+            </div>
+        </section>
+        <section class="statistics">
+            <div class="statistics__inner container">
+                <div class="statistics__item">
+                    <span>7</span>
+                    <p>років</p>
+                </div>
+
+                <div class="statistics__item">
+                    <span>156</span>
+                    <p>проектів</p>
+                </div>
+                <div class="statistics__item">
+                    <span>1300000</span>
+                    <p>прокладено кабелю</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="footer">

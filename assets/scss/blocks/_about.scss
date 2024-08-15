@@ -1,3 +1,30 @@
 .about {
-    background: $color-cyan;
+    padding: 95px 0;
+
+    @include mobile {
+        padding: 60px 0;
+    }
+
+    & .wrapper {
+        align-items: flex-start;
+        gap: clamp(2.813rem, 1.19rem + 7.21vw, 7.5rem);
+
+        @include tablet {
+            flex-direction: column;
+        }
+    }
+
+    & h2 {
+        max-width: 320px;
+
+        @include tablet {
+            max-width: 200px;
+        }
+    }
+
+    & p {
+        max-width: 730px;
+        text-align: right;
+        align-self: flex-end;
+    }
 }
