@@ -1,0 +1,45 @@
+.services {
+    padding: clamp(1.875rem, 0.577rem + 5.77vw, 5.625rem) 0;
+
+    &__inner {
+
+        & h2 {
+            margin-bottom: 50px;
+
+            @include mobile {
+                margin-bottom: 30px;
+            }
+        }
+
+        & .subtitle {
+            max-width: 800px
+        }
+
+        
+    }
+
+    &__list {
+        margin-top: 140px;
+        @include flex-center;
+        gap: 100px;
+
+        & h3 {
+            margin-top: 10px;
+        }
+    }
+
+    &__info {
+        margin-top: 120px;
+        display: flex;
+        flex-direction: column;
+
+        & a {
+            margin-top: 90px;
+            margin-left: auto;
+
+            @include hover {
+                color: $color-red;
+            }
+        }
+    }
+}
