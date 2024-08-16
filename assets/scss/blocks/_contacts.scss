@@ -1,0 +1,170 @@
+.contacts {
+    padding-block: clamp(2.5rem, 1.635rem + 3.85vw, 5rem);
+    color: $color-white;
+    background: $color-dark;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: clamp(1.25rem, 0.385rem + 3.85vw, 3.75rem) clamp(1.25rem, -5.559rem + 10.64vw, 3.75rem);
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+    }
+
+    &__top {
+        @include tablet {
+            width: 100%;
+        }
+
+        & .subtitle {
+            margin-top: 10px;
+            max-width: 400px;
+
+            @include tablet {
+                margin-left: auto;
+                text-align: right;
+                max-width: 300px
+            }
+        }
+    }
+
+    &__info {
+        @include fluid-text(20, 16);
+        margin-top: 120px;
+        max-width: 230px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+
+        @include tablet {
+            margin-top: 0px;
+        }
+
+        @include mobile {
+            width: 50%;
+            max-width: none;
+            align-items: flex-end;
+            gap: 6px
+        }
+
+        @include phone {
+            width: 100%;
+            align-items: center;
+        }
+
+        & h4 {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+
+            @include mobile {
+                margin-right: auto;
+            }
+
+            & svg {
+                color: $color-red;
+
+                & path {
+                    fill: none;
+                }
+            }
+        }
+
+        & a {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 50%;
+                translate: -50% 0;
+                display: block;
+                width: 0;
+                height: 2px;
+                background: $color-white;
+                transition-duration: $transition-duration;
+            }
+
+            @include hover {
+
+                &::after {
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+
+    &__map {
+        order: 1;
+        margin-left: auto;
+        display: flex;
+        align-items: flex-end;
+        gap: 60px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        @include mobile {
+            order: inherit;
+            margin: 0;
+        }
+
+        & a {
+            text-transform: uppercase;
+
+            @include hover {
+                color: $color-red;
+
+                & svg {
+                    rotate: 45deg;
+                }
+            }
+
+            & svg {
+                margin-left: 10px;
+                transition-duration: $transition-duration;
+
+                @include tablet {
+                    rotate: 90deg;
+                }
+            }
+        }
+
+        & iframe {
+            border-radius: $border-radius-large $border-radius-large $border-radius $border-radius;
+
+            @include mobile {
+                width: 100%;
+            }
+        }
+    }
+
+    &__social {
+        order: 2;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include phone {
+            padding: 0 20px;
+        }
+
+        & a {
+            display: flex;
+
+            @include hover {
+                color: $color-red;
+            }
+        }
+    }
+}

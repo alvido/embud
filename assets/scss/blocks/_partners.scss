@@ -1,6 +1,301 @@
 .partners {
+    position: relative;
     padding: clamp(3.75rem, 2.452rem + 5.77vw, 7.5rem) 0;
     color: $color-white;
     background: $color-dark;
-    border-radius: $border-radius-large;
+    border-radius: $border-radius-large $border-radius-large 0 0;
+
+    @include mobile {
+        border-radius: 0;
+    }
+
+    & h2,
+    & p {
+        max-width: 1120px;
+        margin: 0 auto;
+    }
+
+    &__list {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 10px 5px;
+
+        @include mobile {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        & li {
+            @include flex-center;
+            padding: 15px 30px;
+            height: 190px;
+            background: $color-white;
+            border-radius: $border-radius-large;
+
+            & img {
+                object-fit: cover;
+                max-height: 100%;
+            }
+
+            @include tablet {
+                height: 140px;
+            }
+
+            @include mobile {
+                height: 100px;
+            }
+
+            @include phone {
+                height: 60px;
+                padding: 6px 16px;
+                border-radius: $border-radius;
+            }
+
+            /* Первые две ячейки в первом столбце остаются пустыми */
+            &:nth-child(1) {
+                grid-column: 2;
+                /* Начинаем со второго столбца */
+                grid-row: 1;
+                /* Первая строка */
+            }
+
+            &:nth-child(2) {
+                grid-column: 3;
+                /* Третий столбец */
+                grid-row: 1;
+                /* Первая строка */
+            }
+
+            &:nth-child(3) {
+                grid-column: 4;
+                /* Четвёртый столбец */
+                grid-row: 1;
+                /* Первая строка */
+            }
+
+            &:nth-child(4) {
+                grid-column: 2;
+                /* Второй столбец */
+                grid-row: 2;
+                /* Вторая строка */
+            }
+
+            &:nth-child(5) {
+                grid-column: 3;
+                /* Третий столбец */
+                grid-row: 2;
+                /* Вторая строка */
+            }
+
+            &:nth-child(6) {
+                grid-column: 4;
+                /* Четвёртый столбец */
+                grid-row: 2;
+                /* Вторая строка */
+            }
+
+            /* Далее элементы начинают заполнять пустые места */
+            &:nth-child(7) {
+                grid-column: 1;
+                /* Первый столбец */
+                grid-row: 3;
+                /* Третья строка */
+            }
+
+            &:nth-child(8) {
+                grid-column: 2;
+                /* Второй столбец */
+                grid-row: 3;
+                /* Третья строка */
+            }
+
+            &:nth-child(9) {
+                grid-column: 3;
+                /* Третий столбец */
+                grid-row: 3;
+                /* Третья строка */
+            }
+
+            &:nth-child(10) {
+                grid-column: 4;
+                /* Четвёртый столбец */
+                grid-row: 3;
+                /* Третья строка */
+            }
+
+            &:nth-child(11) {
+                grid-column: 1;
+                /* Первый столбец */
+                grid-row: 4;
+                /* Четвёртая строка */
+            }
+
+            &:nth-child(12) {
+                grid-column: 2;
+                /* Второй столбец */
+                grid-row: 4;
+                /* Четвёртая строка */
+            }
+
+            &:nth-child(13) {
+                grid-column: 3;
+                /* Третий столбец */
+                grid-row: 4;
+                /* Четвёртая строка */
+            }
+
+            &:nth-child(14) {
+                grid-column: 4;
+                /* Четвёртый столбец */
+                grid-row: 4;
+                /* Четвёртая строка */
+            }
+
+            /* Дополнительные элементы продолжают заполнять сетку */
+            &:nth-child(15) {
+                grid-column: 1;
+                grid-row: 5;
+            }
+
+            &:nth-child(16) {
+                grid-column: 2;
+                grid-row: 5;
+            }
+
+            @include mobile {
+
+                /* Первые две ячейки в первом столбце остаются пустыми */
+                &:nth-child(1) {
+                    grid-column: 2;
+                    /* Начинаем со второго столбца */
+                    grid-row: 1;
+                    /* Первая строка */
+                }
+
+                &:nth-child(2) {
+                    grid-column: 3;
+                    /* Третий столбец */
+                    grid-row: 1;
+                    /* Первая строка */
+                }
+
+                &:nth-child(3) {
+                    grid-column: 1;
+                    /* Четвёртый столбец */
+                    grid-row: 2;
+                    /* Первая строка */
+                }
+
+                &:nth-child(4) {
+                    grid-column: 2;
+                    /* Второй столбец */
+                    grid-row: 2;
+                    /* Вторая строка */
+                }
+
+                &:nth-child(5) {
+                    grid-column: 3;
+                    /* Третий столбец */
+                    grid-row: 2;
+                    /* Вторая строка */
+                }
+
+                &:nth-child(6) {
+                    grid-column: 1;
+                    /* Четвёртый столбец */
+                    grid-row: 3;
+                    /* Вторая строка */
+                }
+
+                /* Далее элементы начинают заполнять пустые места */
+                &:nth-child(7) {
+                    grid-column: 2;
+                    /* Первый столбец */
+                    grid-row: 3;
+                    /* Третья строка */
+                }
+
+                &:nth-child(8) {
+                    grid-column: 3;
+                    /* Второй столбец */
+                    grid-row: 3;
+                    /* Третья строка */
+                }
+
+                &:nth-child(9) {
+                    grid-column: 1;
+                    /* Третий столбец */
+                    grid-row: 4;
+                    /* Третья строка */
+                }
+
+                &:nth-child(10) {
+                    grid-column: 2;
+                    /* Четвёртый столбец */
+                    grid-row: 4;
+                    /* Третья строка */
+                }
+
+                &:nth-child(11) {
+                    grid-column: 3;
+                    /* Первый столбец */
+                    grid-row: 4;
+                    /* Четвёртая строка */
+                }
+
+                &:nth-child(12) {
+                    grid-column: 1;
+                    /* Второй столбец */
+                    grid-row: 5;
+                    /* Четвёртая строка */
+                }
+
+                &:nth-child(13) {
+                    grid-column: 2;
+                    /* Третий столбец */
+                    grid-row: 5;
+                    /* Четвёртая строка */
+                }
+
+                &:nth-child(14) {
+                    grid-column: 3;
+                    /* Четвёртый столбец */
+                    grid-row: 5;
+                    /* Четвёртая строка */
+                }
+
+                /* Дополнительные элементы продолжают заполнять сетку */
+                &:nth-child(15) {
+                    grid-column: 1;
+                    grid-row: 6;
+                }
+
+                &:nth-child(16) {
+                    grid-column: 2;
+                    grid-row: 6;
+                }
+            }
+        }
+    }
+
+    & .down {
+        color: $color-red;
+        position: absolute;
+        right: 145px;
+        bottom: 90px;
+
+        @include mobile {
+            right: 40px;
+            bottom: 40px;
+        }
+
+        @include phone {
+            display: none;
+        }
+
+        @include hover {
+            color: $color-white;
+        }
+    }
 }

@@ -1,0 +1,91 @@
+.feedback {
+    padding-block: clamp(3.75rem, 2.236rem + 6.73vw, 8.125rem);
+
+    & h2 {
+        margin-bottom: 20px;
+        max-width: 500px;
+        gap: 0;
+        align-items: flex-end;
+        text-wrap: balance;
+        position: relative;
+
+        @include tablet {
+            max-width: 400px;
+        }
+
+        @include mobile {
+            max-width: 300px;
+        }
+
+        & img {
+            margin-bottom: 20px;
+
+            @include tablet {
+                margin-bottom: 10px;
+            }
+
+            @include mobile {
+                max-width: 50px;
+            }
+        }
+    }
+
+    & .subtitle {
+        margin-left: auto;
+        max-width: 400px;
+
+        @include phone {
+            max-width: 280px;
+        }
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        max-width: 800px;
+        margin-top: clamp(3.125rem, 1.394rem + 7.69vw, 8.125rem);
+        margin-left: auto;
+
+        @include tablet {
+            max-width: none;
+        }
+
+        & .wrapper {
+            justify-content: space-between;
+            gap: 14px;
+
+            @include mobile {
+                flex-direction: column;
+                align-items: flex-start;
+
+                & input {
+                    // max-width: 250px;
+                }
+            }
+        }
+
+        & .button {
+            height: $input-height;
+            justify-content: space-between;
+            padding-inline: 27px;
+
+            @include phone {
+                height: 35px;
+            }
+
+            & svg {
+                transition-duration: $transition-duration;
+            }
+
+            @include hover {
+                & svg {
+                    rotate: 45deg;
+                }
+            }
+
+        }
+    }
+
+
+}
