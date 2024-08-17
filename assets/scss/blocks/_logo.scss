@@ -1,4 +1,8 @@
+/* logo */
+
 .logo {
+    color: $color-dark;
+
 
     @include fluid-text(32, 20);
     font-weight: 900;
@@ -21,3 +25,5 @@
         }
     }
 }
+
+/* logo */ 

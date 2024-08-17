@@ -1,0 +1,33 @@
+/* marquee */
+
+.marquee {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: clamp(0.625rem, 0.149rem + 2.12vw, 2rem);
+
+    overflow: hidden;
+    /* Скрываем текст, выходящий за границы контейнера */
+    background: $color-red;
+    /* Цвет фона */
+    white-space: nowrap;
+    /* Текст не будет переноситься */
+    box-sizing: border-box;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        padding-block: clamp(0.75rem, 0.361rem + 1.73vw, 1.875rem);
+        gap: clamp(0.625rem, 0.149rem + 2.12vw, 2rem);
+        animation: marquee 10s linear infinite;
+
+        & span {
+            @include fluid-text(40, 20);
+            color: $color-white;
+            font-weight: 700;
+            line-height: 1.1;
+        }
+    }
+}
+
+/* marquee */ 

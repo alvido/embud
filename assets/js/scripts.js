@@ -1,46 +1,44 @@
 // Burger Menu Open //
+document.addEventListener("DOMContentLoaded", function () {
+  // Выбираем бургер-кнопку и навигацию
+  let burgerButton = document.getElementById("burgerButton");
+  const menuDialog = document.querySelector("#mobileMenu");
+  let links = document.querySelectorAll(".mobile__menu-list li a");
+  let body = document.querySelector("body");
+  const menuClose = document.querySelector(".mobile__menu-close");
+
+  // Если бургер-кнопка существует, добавляем обработчик события
+  if (burgerButton) {
+    burgerButton.addEventListener("click", function (e) {
+      e.stopPropagation(); // Остановка всплытия события
+      menuDialog.showModal();
+      body.classList.add("lock");
+      menuDialog.classList.add("open");
+    });
+  }
+
+  // Функция плавного закрытия меню
+  function closeMenu() {
+    menuDialog.classList.remove("open");
+    body.classList.remove("lock");
+    menuDialog.addEventListener(
+      "transitionend",
+      function () {
+        menuDialog.close();
+      },
+      { once: true }
+    );
+  }
+
+  // Закрытие меню по кнопке
+  menuClose.addEventListener("click", closeMenu);
+
+  // Закрытие меню по клику на ссылку
+  links.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+});
 // Burger Menu Open //
-// document.addEventListener("DOMContentLoaded", function () {
-//   // Выбираем бургер-кнопку и навигацию
-//   let burgerButton = document.getElementById("burgerButton");
-//   let navigation = document.querySelector(".navigation");
-//   let links = document.querySelectorAll(".navigation__link");
-
-//   // Если бургер-кнопка существует, добавляем обработчик события
-//   if (burgerButton) {
-//     burgerButton.addEventListener("click", function (e) {
-//       e.stopPropagation(); // Остановка всплытия события
-//       burgerButton.classList.toggle("burger--active"); // Переключаем класс активности бургер-кнопки
-//       navigation.classList.toggle("navigation--active"); // Переключаем класс активности навигации
-//     });
-//   }
-
-//   links.forEach((link) => {
-//     link.addEventListener("click", function (e) {
-//       burgerButton.classList.remove("burger--active");
-//       navigation.classList.remove("navigation--active");
-//       console.log("link", link);
-//     });
-//   });
-// });
-//
-
-
-// Получаем элементы
-const menuToggle = document.querySelector('.mobile__menu-toggle');
-const menuDialog = document.querySelector('#mobileMenu');
-const menuClose = document.querySelector('.mobile__menu-close');
-
-// Открытие меню
-menuToggle.addEventListener('click', function() {
-  menuDialog.showModal();
-});
-
-// Закрытие меню
-menuClose.addEventListener('click', function() {
-  menuDialog.close();
-});
-
 
 // Fixed header
 $(document).ready(function () {
@@ -65,23 +63,8 @@ $(document).ready(function () {
       main.css("padding-top", 0); // Убираем верхний отступ
     }
   }
-
-  // Плавная прокрутка с учетом высоты заголовка
-  $('a[href*="#"]').on("click", function (event) {
-    event.preventDefault();
-
-    var targetId = $(this).attr("href").split("#")[1],
-      targetOffset = $("#" + targetId).offset().top - headerH;
-
-    $("html, body").animate(
-      {
-        scrollTop: targetOffset,
-      },
-      300
-    );
-  });
 });
-// Fixed header end
+// // Fixed header end
 
 //swiper
 const progressRows = document.querySelectorAll(".hero__swiper-progress");

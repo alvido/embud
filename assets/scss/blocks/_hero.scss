@@ -1,5 +1,6 @@
-.hero {
+/* hero */
 
+.hero {
 
     &__inner {
         position: relative;
@@ -7,17 +8,18 @@
         flex-direction: column;
         justify-content: flex-end;
 
-        background: url(../images/banner/banner.png) no-repeat center;
+        background-repeat: no-repeat;
+        background-position: center;
         background-size: cover;
         border-radius: 0 0 $border-radius-large $border-radius-large;
         height: 100vh;
         min-height: 860px;
-        padding-block: 200px 100px;
+        padding-block: 200px 130px;
         color: $color-white;
 
         @include tablet {
             background-position: -10px;
-            padding-block: 140px 30px;
+            padding-top: 140px;
         }
 
         @include phone {
@@ -43,9 +45,10 @@
 
         @include tablet {
             max-width: 210px;
-            bottom: 100px;
             right: 40px;
         }
 
     }
 }
+
+/* hero */ 

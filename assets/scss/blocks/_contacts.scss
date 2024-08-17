@@ -1,3 +1,5 @@
+/* contacts */
+
 .contacts {
     padding-block: clamp(2.5rem, 1.635rem + 3.85vw, 5rem);
     color: $color-white;
@@ -145,6 +147,10 @@
             @include mobile {
                 width: 100%;
             }
+
+            @include phone {
+                height: 165px;
+            }
         }
     }
 
@@ -168,3 +174,5 @@
         }
     }
 }
+
+/* contacts */

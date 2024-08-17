@@ -29,7 +29,7 @@
             </a>
             <nav class="header__navigation navigation">
                 <ul class="navigation__list">
-                    <li><a href="#services">ПОСЛУГИ</a></li>
+                    <li><a href="/index.html#services">ПОСЛУГИ</a></li>
                     <li><a href="/projects.html">ПРОЕКТИ</a></li>
                     <li><a href="#contacts">КОНТАКТИ</a></li>
                 </ul>
@@ -50,7 +50,7 @@
 
     <main class="main">
         <section class="hero">
-            <div class="hero__inner container">
+            <div class="hero__inner container" style="background-image: url('/assets/images/banner/banner.png');">
                 <h1>СУЧАСНІ Електромонтажні рІШЕННЯ</h1>
                 <p class="subtitle">Наш досвід і знання дозволяють створювати рішення, що повністю відповідають вимогам
                     сучасності та потребам наших замовників.</p>
@@ -74,7 +74,7 @@
             </div>
         </section>
         <section class="production">
-            <div class="production__inner container">
+            <div class="production__inner container" style="background-image: url(/assets/images/banner/banner2.png);">
                 <h2>ВИРОБНИЦТВО СОНЯЧНИХ ПАНЕЛЕЙ</h2>
                 <a class="button">ПЕРЕГЛЯНУТИ</a>
             </div>
@@ -96,7 +96,7 @@
                 </div>
             </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
             <div class="services__inner container">
                 <h2>ПОСЛУГИ <img src="assets/images/icon/arrow-down-right.svg" alt="arrow-down-right"></h2>
                 <p class="subtitle">Крокуємо в ногу з часом, пропонуючи індивідуальні рішення для всіх типів
@@ -261,7 +261,7 @@
                 </form>
             </div>
         </section>
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="contacts__inner container">
                 <div class="contacts__top">
                     <h2>
@@ -361,7 +361,7 @@
                         <a href="/index.html">Головна</a>
                     </li>
                     <li>
-                        <a href="#services">Послуги</a>
+                        <a href="/index.html#services">Послуги</a>
                     </li>
                     <li>
                         <a href="/projects.html">Проекти</a>
@@ -375,19 +375,29 @@
         </div>
     </footer>
 
-    <nav class="mobile__navigation">
-        <button class="mobile__menu-toggle">☰ Меню</button>
-
-        <dialog id="mobileMenu" class="mobile__menu-dialog">
-            <ul class="mobile__menu">
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contact">Контакты</a></li>
+    <dialog id="mobileMenu" class="mobile__menu">
+        <nav class="mobile__menu-nav">
+            <div class="mobile__menu-header">
+                <a href="/index.html" class="header__logo logo">
+                    ЕМБУД
+                </a>
+                <button class="mobile__menu-close button">Закрити</button>
+            </div>
+            <ul class="mobile__menu-list">
+                <li><a href="/index.html">ГОЛОВНА</a></li>
+                <li><a href="/index.html#services">ПОСЛУГИ</a></li>
+                <li><a href="/projects.html">ПРОЕКТИ</a></li>
+                <li><a href="#contacts">КОНТАКТИ</a></li>
             </ul>
-            <button class="mobile__menu-close">Закрыть</button>
-        </dialog>
-    </nav>
+            <div class="mobile__menu-actions actions">
+                <div class="actions__lang">
+                    <a href="#">УКР</a>
+                    <a href="#">ENG</a>
+                </div>
+                <button class="actions__button button">ЗАТЕЛЕФОНУВАТИ</button>
+            </div>
+        </nav>
+    </dialog>
 
 
     <script src="assets/js/jquery.min.js"></script>

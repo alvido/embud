@@ -1,0 +1,40 @@
+/* production */
+.production__inner {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-block: 35px;
+  min-height: 580px;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+@media (max-width: 767px) {
+  .production__inner {
+    background-position: left;
+    border-radius: 0;
+  }
+}
+.production h2 {
+  max-width: 760px;
+}
+.production .button {
+  position: absolute;
+  right: 25px;
+  bottom: 35px;
+}
+@media (max-width: 767px) {
+  .production .button {
+    position: initial;
+    margin-left: auto;
+  }
+}
+
+/* production */

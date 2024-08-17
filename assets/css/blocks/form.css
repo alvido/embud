@@ -1,0 +1,80 @@
+/* form */
+form label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 16px;
+  font-size: clamp(1rem, 0.186rem + 1.69vw, 1.5rem);
+  font-weight: 700;
+}
+form input,
+form select {
+  margin: 0;
+  font-size: clamp(14px, 1.25vw, 18px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  outline: none;
+  width: 100%;
+  height: 54px;
+  padding: 10px 27px;
+  color: #172e58;
+  border-radius: 10px;
+  border: 1px solid #172e58;
+}
+form input::-webkit-input-placeholder,
+form select::-webkit-input-placeholder {
+  color: #3a5f6f;
+}
+form input::-moz-placeholder,
+form select::-moz-placeholder {
+  color: #3a5f6f;
+}
+form input:-ms-input-placeholder,
+form select:-ms-input-placeholder {
+  color: #3a5f6f;
+}
+form input::-ms-input-placeholder,
+form select::-ms-input-placeholder {
+  color: #3a5f6f;
+}
+form input::placeholder,
+form select::placeholder {
+  color: #3a5f6f;
+}
+@media (max-width: 560px) {
+  form input,
+  form select {
+    height: 35px;
+  }
+}
+form input:focus-visible,
+form select:focus-visible {
+  border: 1px solid #000;
+}
+form textarea {
+  margin: 0;
+  font-size: clamp(14px, 1.25vw, 18px);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  outline: none;
+  width: 100%;
+  min-height: 170px;
+  height: 54px;
+  padding: 10px 27px;
+  color: #172e58;
+  border-radius: 10px;
+  border: 1px solid #172e58;
+  resize: none;
+}
+form textarea:focus-visible {
+  border: 1px solid #000;
+}
+
+/* form */

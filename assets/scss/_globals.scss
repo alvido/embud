@@ -1,31 +1,4 @@
-// /*scroll bar*/
-// /* Работает в Firefox */
-// * {
-//     scrollbar-width: thin;
-//     /* "auto" или "thin" */
-//     scrollbar-color: var(--color-accent) transparent;
-//     /* цвет бегунка и зоны отслеживания */
-// }
-
-// /* Работает в Chrome, Edge и Safari */
-// *::-webkit-scrollbar {
-//     width: 8px;
-//     /* ширина всей полосы прокрутки */
-// }
-
-// *::-webkit-scrollbar-track {
-//     background: #000;
-//     /* цвет зоны отслеживания */
-// }
-
-// *::-webkit-scrollbar-thumb {
-//     background-color: var(--color-accent);
-//     /* цвет бегунка */
-//     border-radius: 20px;
-//     /* округлось бегунка */
-//     border: 2px solid transparent;
-//     /* отступ вокруг бегунка */
-// }
+/* globals */
 
 html {
     scroll-behavior: smooth;
@@ -42,6 +15,11 @@ body {
 
     color: $color-dark;
     background: $color-white;
+
+    &.lock {
+        max-height: 100vh;
+        overflow: hidden;
+    }
 
 }
 
@@ -122,11 +100,4 @@ h5 {
     @include flex-center;
 }
 
-.section__text {
-    @include fluid-text(24, 16);
-
-    &:where(:not(:last-child)) {
-        margin-bottom: var(--paragraphMarginBottom);
-
-    }
-}
+/* globals */

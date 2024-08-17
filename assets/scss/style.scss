@@ -1,9 +1,9 @@
-@import 'normalize', 'fonts', 'veriables', 'mixins', 'media',  'utils', 'globals', 'animations';
+/* import style scss */
+@import 'normalize', 'veriables', 'mixins', 'media', 'utils', 'globals', 'animations';
 
 @import 'blocks/button',
 'blocks/button-burger',
 'blocks/form',
-'blocks/select',
 'blocks/swiper',
 
 'blocks/header',
@@ -18,7 +18,13 @@
 'blocks/documents',
 'blocks/feedback',
 'blocks/contacts',
+'blocks/projects',
+'blocks/marquee',
 
 
 
 'blocks/footer';
+
+/* end import style scss */
+
+

@@ -1,3 +1,5 @@
+/* utils */
+
 .container {
     max-width: calc($container-width + $container-padding-x * 2);
     margin-inline: auto;
@@ -28,3 +30,5 @@
         display: none !important;
     }
 }
+
+/* utils */

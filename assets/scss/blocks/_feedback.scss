@@ -1,3 +1,5 @@
+/* feedback */ 
+
 .feedback {
     padding-block: clamp(3.75rem, 2.236rem + 6.73vw, 8.125rem);
 
@@ -58,10 +60,6 @@
             @include mobile {
                 flex-direction: column;
                 align-items: flex-start;
-
-                & input {
-                    // max-width: 250px;
-                }
             }
         }
 
@@ -86,6 +84,6 @@
 
         }
     }
-
-
 }
+
+/* feedback */

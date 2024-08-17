@@ -1,0 +1,97 @@
+/* projects */
+
+.projects {
+    padding: clamp(2.5rem, 1.202rem + 5.77vw, 6.25rem) 0 clamp(3.75rem, 2.885rem + 3.85vw, 6.25rem);
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: clamp(0.625rem, -0.132rem + 3.37vw, 2.813rem);
+
+        & li {
+            position: relative;
+            padding: 75px 0 0px;
+            display: flex;
+            gap: clamp(1.25rem, 0.601rem + 2.88vw, 3.125rem);
+
+            &:nth-child(even) {
+                flex-direction: row-reverse;
+
+                & .brand {
+                    left: auto;
+                    right: 0;
+                }
+
+                @include mobile {
+                    flex-direction: column;
+                    align-items: flex-end;
+
+                    & .projects__info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-end;
+
+                        & p {
+                            text-align: right;
+                        }
+                    }
+                }
+
+                @include phone {
+                    & .projects__info {
+                        
+                        align-items: flex-start;
+
+                        & p {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+
+            @include mobile {
+                flex-direction: column;
+                padding-top: 40px;
+            }
+
+            & .brand {
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                & img {
+                    max-width: 180px;
+                    max-height: 155px;
+
+                    @include mobile {
+                        max-height: 120px;
+                    }
+
+                    @include phone {
+                        max-height: 84px;
+                    }
+                }
+
+            }
+
+            & .projects__img {
+                width: 42%;
+                min-width: 320px;
+
+                @include phone {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__info {
+        width: 58%;
+
+        @include mobile {
+            width: 100%;
+        }
+    }
+}
+
+/* projects */

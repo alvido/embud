@@ -1,0 +1,39 @@
+/* about */
+.about {
+  padding: 95px 0;
+}
+@media (max-width: 767px) {
+  .about {
+    padding: 60px 0;
+  }
+}
+.about .wrapper {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: clamp(2.813rem, 1.19rem + 7.21vw, 7.5rem);
+}
+@media (max-width: 1023px) {
+  .about .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.about h2 {
+  max-width: 320px;
+}
+@media (max-width: 1023px) {
+  .about h2 {
+    max-width: 200px;
+  }
+}
+.about p {
+  max-width: 730px;
+  text-align: right;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+/* about */

@@ -1,3 +1,5 @@
+/* button */
+
 .button {
     @include reset-button;
     height: $button-height;
@@ -26,6 +28,7 @@
     @include tablet {
         height: 55px;
     }
+    
     &--alt {
         @include fluid-text(24, 14);
         font-weight: 700;
@@ -36,3 +39,5 @@
         }
     }
 }
+
+/* button */

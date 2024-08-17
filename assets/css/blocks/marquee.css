@@ -1,0 +1,39 @@
+/* marquee */
+.marquee {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: clamp(0.625rem, 0.149rem + 2.12vw, 2rem);
+  overflow: hidden;
+  /* Скрываем текст, выходящий за границы контейнера */
+  background: #ff364c;
+  /* Цвет фона */
+  white-space: nowrap;
+  /* Текст не будет переноситься */
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.marquee__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-block: clamp(0.75rem, 0.361rem + 1.73vw, 1.875rem);
+  gap: clamp(0.625rem, 0.149rem + 2.12vw, 2rem);
+  -webkit-animation: marquee 10s linear infinite;
+  animation: marquee 10s linear infinite;
+}
+.marquee__inner span {
+  font-size: clamp(20px, 2.7777777778vw, 40px);
+  color: #ffffff;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+/* marquee */

@@ -1,0 +1,122 @@
+/* services */
+.services {
+  padding: clamp(1.875rem, 0.577rem + 5.77vw, 5.625rem) 0;
+}
+.services__inner h2 {
+  margin-bottom: 50px;
+}
+@media (max-width: 767px) {
+  .services__inner h2 {
+    margin-bottom: 30px;
+  }
+  .services__inner h2 img {
+    max-height: 40px;
+  }
+}
+.services__inner .subtitle {
+  max-width: 700px;
+}
+.services__list {
+  margin-top: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 100px;
+}
+@media (max-width: 1023px) {
+  .services__list {
+    gap: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .services__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 20px;
+  }
+}
+.services__list li {
+  position: relative;
+}
+@media (max-width: 767px) {
+  .services__list li {
+    padding: 0 40px 20px 0;
+  }
+}
+@media (max-width: 560px) {
+  .services__list li {
+    padding: 0 60px 40px 0;
+  }
+}
+@media (max-width: 560px) {
+  .services__list li img {
+    max-width: 200px;
+    max-height: 250px;
+  }
+}
+.services__list li h3 {
+  margin-top: 10px;
+}
+@media (max-width: 767px) {
+  .services__list li h3 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 120px;
+  }
+}
+.services__info {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .services__info {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 560px) {
+  .services__info ul {
+    list-style: none;
+    padding: 0;
+  }
+}
+.services__info a {
+  margin-top: 90px;
+  margin-left: auto;
+}
+@media (hover: hover) {
+  .services__info a:hover {
+    color: #ff364c;
+  }
+}
+@media (hover: none) {
+  .services__info a:active {
+    color: #ff364c;
+  }
+}
+@media (max-width: 767px) {
+  .services__info a {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 560px) {
+  .services__info a {
+    margin-top: 0px;
+  }
+}
+
+/* services */

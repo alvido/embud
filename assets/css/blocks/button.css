@@ -1,0 +1,62 @@
+/* button */
+.button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-column-gap: 8px;
+  -moz-column-gap: 8px;
+  column-gap: 8px;
+  padding: 10px clamp(2.188rem, -3.77rem + 9.31vw, 4.375rem);
+  font-size: clamp(14px, 1.3888888889vw, 20px);
+  font-weight: 600;
+  border-radius: 10px;
+  text-transform: uppercase;
+  color: white;
+  background: #ff364c;
+  border: 2px solid #ff364c;
+}
+@media (hover: hover) {
+  .button:hover {
+    background: #172e58;
+    border: 2px solid #ff364c;
+  }
+}
+@media (hover: none) {
+  .button:active {
+    background: #172e58;
+    border: 2px solid #ff364c;
+  }
+}
+@media (max-width: 1023px) {
+  .button {
+    height: 55px;
+  }
+}
+.button--alt {
+  font-size: clamp(14px, 1.6666666667vw, 24px);
+  font-weight: 700;
+  background: #172e58;
+}
+@media (hover: hover) {
+  .button--alt:hover {
+    background: #ff364c;
+  }
+}
+@media (hover: none) {
+  .button--alt:active {
+    background: #ff364c;
+  }
+}
+
+/* button */

@@ -1,0 +1,234 @@
+/* contacts */
+.contacts {
+  padding-block: clamp(2.5rem, 1.635rem + 3.85vw, 5rem);
+  color: #ffffff;
+  background: #172e58;
+}
+.contacts__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: clamp(1.25rem, 0.385rem + 3.85vw, 3.75rem)
+    clamp(1.25rem, -5.559rem + 10.64vw, 3.75rem);
+}
+@media (max-width: 767px) {
+  .contacts__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media (max-width: 1023px) {
+  .contacts__top {
+    width: 100%;
+  }
+}
+.contacts__top .subtitle {
+  margin-top: 10px;
+  max-width: 400px;
+}
+@media (max-width: 1023px) {
+  .contacts__top .subtitle {
+    margin-left: auto;
+    text-align: right;
+    max-width: 300px;
+  }
+}
+.contacts__info {
+  font-size: clamp(16px, 1.3888888889vw, 20px);
+  margin-top: 120px;
+  max-width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 14px;
+}
+@media (max-width: 1023px) {
+  .contacts__info {
+    margin-top: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__info {
+    width: 50%;
+    max-width: none;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 6px;
+  }
+}
+@media (max-width: 560px) {
+  .contacts__info {
+    width: 100%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+.contacts__info h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 8px;
+}
+@media (max-width: 767px) {
+  .contacts__info h4 {
+    margin-right: auto;
+  }
+}
+.contacts__info h4 svg {
+  color: #ff364c;
+}
+.contacts__info h4 svg path {
+  fill: none;
+}
+.contacts__info a {
+  position: relative;
+}
+.contacts__info a::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  translate: -50% 0;
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+@media (hover: hover) {
+  .contacts__info a:hover::after {
+    width: 100%;
+  }
+}
+@media (hover: none) {
+  .contacts__info a:active::after {
+    width: 100%;
+  }
+}
+.contacts__map {
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  gap: 60px;
+}
+@media (max-width: 1023px) {
+  .contacts__map {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts__map {
+    -webkit-box-ordinal-group: inherit;
+    -ms-flex-order: inherit;
+    order: inherit;
+    margin: 0;
+  }
+}
+.contacts__map a {
+  text-transform: uppercase;
+}
+@media (hover: hover) {
+  .contacts__map a:hover {
+    color: #ff364c;
+  }
+  .contacts__map a:hover svg {
+    rotate: 45deg;
+  }
+}
+@media (hover: none) {
+  .contacts__map a:active {
+    color: #ff364c;
+  }
+  .contacts__map a:active svg {
+    rotate: 45deg;
+  }
+}
+.contacts__map a svg {
+  margin-left: 10px;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+@media (max-width: 1023px) {
+  .contacts__map a svg {
+    rotate: 90deg;
+  }
+}
+.contacts__map iframe {
+  border-radius: 20px 20px 10px 10px;
+}
+@media (max-width: 767px) {
+  .contacts__map iframe {
+    width: 100%;
+  }
+}
+@media (max-width: 560px) {
+  .contacts__map iframe {
+    height: 165px;
+  }
+}
+.contacts__social {
+  -webkit-box-ordinal-group: 3;
+  -ms-flex-order: 2;
+  order: 2;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
+}
+@media (max-width: 560px) {
+  .contacts__social {
+    padding: 0 20px;
+  }
+}
+.contacts__social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media (hover: hover) {
+  .contacts__social a:hover {
+    color: #ff364c;
+  }
+}
+@media (hover: none) {
+  .contacts__social a:active {
+    color: #ff364c;
+  }
+}
+
+/* contacts */

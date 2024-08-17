@@ -1,0 +1,17 @@
+/* burger */
+.burger {
+  display: none;
+  position: relative;
+  z-index: 2;
+}
+@media (max-width: 1023px) {
+  .burger {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .burger {
+    height: 37px;
+  }
+}
+/* burger */

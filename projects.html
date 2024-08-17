@@ -1,1 +1,390 @@
-123s
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Oleksandr Dorobalo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Title</title>
+    <link rel="icon" type="image/png" href="assets/images/header/logo.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.4/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <a href="/index.html" class="header__logo logo">
+                ЕМБУД
+            </a>
+            <nav class="header__navigation navigation">
+                <ul class="navigation__list">
+                    <li><a href="/index.html#services">ПОСЛУГИ</a></li>
+                    <li><a href="/projects.html">ПРОЕКТИ</a></li>
+                    <li><a href="#contacts">КОНТАКТИ</a></li>
+                </ul>
+
+                <div class="header__actions actions">
+                    <div class="actions__lang">
+                        <a href="#">УКР</a>
+                        <a href="#">ENG</a>
+                    </div>
+                    <button class="actions__button button">ПОДЗВОНИТИ</button>
+                </div>
+            </nav>
+            <button class="burger button" id="burgerButton">
+                <span>Meню</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="hero__inner container" style="background-image: url('/assets/images/banner/banner3.png');">
+                <h1>ВИКОНАНІ ПРОЕКТИ </h1>
+                <button class="button button--alt">Виробництво сонячнИХ панелЕЙ SPT</button>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <ul class="projects__list">
+                    <li>
+                        <span class="brand">
+                            <img src="assets/images/partners/kan.png" alt="">
+                        </span>
+                        <img class="projects__img" src="assets/images/projects/1.png" alt="">
+                        <div class="projects__info">
+                            <h3>ЖК «Файна Таун»</h3>
+                            <p>Внутрішні електромонтажні роботи в будинках, системи блискавко-захисту на будинках.
+                                Монтаж
+                                зовнішнього освітлення, освітлення благоустрою території та декоративної підсвітки.
+                                Також проведено електромонтажні роботи в навчальному закладі А++ на території ЖК.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="brand">
+                            <img src="assets/images/partners/kan.png" alt="">
+                        </span>
+                        <img class="projects__img" src="assets/images/projects/2.png" alt="">
+                        <div class="projects__info">
+                            <h3>Інноваційний парк UNIT.City </h3>
+                            <p>
+                                ЖК «UnitHome» - Виконано внутрішні електромонтажні роботи, системи блискавко-захистів на
+                                будинках. Монтаж зовнішнього освітлення, освітлення благоустрою території та
+                                декоративної підсвітки.
+                                <br><br><br>
+                                Бізнес кампус В12 та Бізнес кампус В15 .
+                                Монтаж та налагодження системи обігріву воронок,
+                                ливне-стоків, підігрів сходів, пандусів, під’їздів в паркінг та інше.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="brand">
+                            <img src="assets/images/partners/kan.png" alt="">
+                        </span>
+                        <img class="projects__img" src="assets/images/projects/3.png" alt="">
+                        <div class="projects__info">
+                            <h3>ЖК Tetris Hall</h3>
+                            <p>
+                                Виконано зовнішню декоративну фасадну підсвітку 1 будинку,
+                                монтаж та налагодження електропостачання.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="brand">
+                            <img src="assets/images/partners/kan.png" alt="">
+                        </span>
+                        <img class="projects__img" src="assets/images/projects/4.png" alt="">
+                        <div class="projects__info">
+                            <h3>ТРЦ Respublika Park</h3>
+                            <p>
+                                Виконано та налагоджено систему внутрішнього електропостачання, влаштування внутрішнього
+                                освітлення ТРЦ та ДРЦ. Встановлення блискавко-захисту покрівлі.
+                                Влаштування, налагодження системи електропостачання та освітлення аеротруби.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="brand">
+                            <img src="assets/images/partners/sg.png" alt="">
+                        </span>
+                        <img class="projects__img" src="assets/images/projects/5.png" alt="">
+                        <div class="projects__info">
+                            <h3>ЖК “Галактика”</h3>
+                            <p>
+                                Монтаж внутрішніх інженерних мереж систем електропостачання. Встановлення
+                                блискавкозахисту та влаштування трубної каналізації для мережі 10 кВ.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="brand">
+                            <img src="assets/images/partners/sg.png" alt="">
+                        </span>
+                        <img class="projects__img" src="assets/images/projects/6.png" alt="">
+                        <div class="projects__info">
+                            <h3>ЖК Варшавський</h3>
+                            <p>
+                                Монтаж внутрішніх інженерних мереж систем електропостачання.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="brand">
+                            <img src="" alt="">
+                        </span>
+                        <img class="projects__img" src="assets/images/projects/7.png" alt="">
+                        <div class="projects__info">
+                            <h3>ПРАТ "КИЇВСТАР" </h3>
+                            <p>
+                                Комплекс робіт з проведення експлуатаційних електротехнічних випробувань та вимірювань.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="brand">
+                            <img src="" alt="">
+                        </span>
+                        <img class="projects__img" src="assets/images/projects/8.png" alt="">
+                        <div class="projects__info">
+                            <h3>Клініка «MEDIKOM»</h3>
+                            <p>
+                                Комплекс робіт з внутрішнього електро-забезпечення та робіт з внутрішнього освітлення
+                                палат, кабінетів лікарів та операційних. Монтаж зовнішніх електромереж та благоустрою
+                                території клініки.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="brand">
+                            <img src="" alt="">
+                        </span>
+                        <img class="projects__img" src="assets/images/projects/9.png" alt="">
+                        <div class="projects__info">
+                            <h3>ДТЕК в UNIT.City </h3>
+                            <p>
+                                Бізнес кампус В12 та Бізнес кампус В15.
+                                Встановлення, програмування, налагодження систем. “Розумний будинок” CRESTRON.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="marquee">
+            <div class="marquee__inner">
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+            </div>
+            <div class="marquee__inner">
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+                <span>ЕМБУД</span>
+            </div>
+        </section>
+
+        <section class="feedback">
+            <div class="container">
+                <h2>
+                    НАДІШЛІТЬ СВІЙ ЗАПИТ
+                    <img src="assets/images/icon/arrow-down-right.svg" alt="arrow-down-right">
+                </h2>
+                <p class="subtitle">
+                    Залиште ваш контакт чи запитання, та наші менеджери зв’яжуться з вами.
+                </p>
+                <form action="" class="feedback__form">
+                    <div class="wrapper">
+                        <input type="text" name="your-name" placeholder="Ваше імʼя">
+                        <input type="email" name="your-email" placeholder="hello@gmail.com">
+                        <input type="tel" name="your-phone" placeholder="Номер телефону">
+                    </div>
+
+                    <textarea name="massege" id="" placeholder="Повідомлення"></textarea>
+                    <button class="button">
+                        Відправити
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.74853 17.5601L17.5371 3.77148" stroke="white" stroke-width="1.52"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M10.1131 3.77158H17.5377V11.1962" stroke="white" stroke-width="1.52"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                    </button>
+                </form>
+            </div>
+        </section>
+        <section class="contacts" id="contacts">
+            <div class="contacts__inner container">
+                <div class="contacts__top">
+                    <h2>
+                        КОНТАКТИ
+                    </h2>
+                    <p class="subtitle">
+                        Ви можете зв’язатись у будь-якій зручний для вас час! Просто зателефонуйте або напишіть нам на
+                        почту.
+                    </p>
+                </div>
+                <div class="contacts__info">
+                    <h4>
+                        <svg width="16" height="26" viewBox="0 0 16 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.35311 12.0666L6.35318 12.0666C6.91393 12.6938 7.63808 12.9962 8.35104 12.9962C9.06397 12.9962 9.78798 12.6939 10.349 12.0666L10.349 12.0666C11.4864 10.7948 11.4865 8.70345 10.349 7.43143L6.35311 12.0666ZM6.35311 12.0666C5.21564 10.7948 5.21561 8.7034 6.35313 7.43138L6.35318 7.43133M6.35311 12.0666L6.35318 7.43133M6.35318 7.43133C6.8979 6.82204 7.60723 6.5 8.35104 6.5M6.35318 7.43133L8.35104 6.5M8.35104 6.5C9.09474 6.5 9.80396 6.82214 10.349 7.43138L8.35104 6.5ZM8.35104 6.98397C7.68659 6.98397 7.03316 7.26784 6.54538 7.8133C5.58545 8.88672 5.58545 10.6114 6.54538 11.6849C7.01645 12.2116 7.65797 12.5151 8.35104 12.5151C9.04412 12.5151 9.68564 12.2116 10.1567 11.6849C11.1166 10.6114 11.1166 8.88672 10.1567 7.8133C9.66893 7.26784 9.0155 6.98397 8.35104 6.98397Z"
+                                fill="#FF364C" stroke="#FF364C" />
+                            <path
+                                d="M7.44353 23.2344L7.85517 23.8089L8.25988 23.2295C8.9214 22.2825 10.135 20.4837 11.3373 18.3863C13.6216 14.4019 14.8884 11.0686 14.8884 8.78619C14.8884 4.53699 11.7857 0.982814 7.85721 0.982814C3.92871 0.982814 0.826034 4.53699 0.826034 8.78619C0.826034 11.1893 2.0926 14.5623 4.38383 18.5094L4.81625 18.2583L4.38383 18.5094C5.57951 20.5691 6.78249 22.3119 7.44353 23.2344ZM7.96626 24.298L7.85882 24.4436L7.75017 24.3009C7.60611 24.1116 5.78262 21.699 3.99748 18.582C3.10493 17.0235 2.22708 15.2978 1.57348 13.5922C0.917699 11.8809 0.5 10.2212 0.5 8.78619C0.5 4.16358 3.85193 0.5 7.85721 0.5C11.8625 0.5 15.2144 4.16358 15.2144 8.78619C15.2144 10.1438 14.7986 11.7632 14.1424 13.4615C13.489 15.1527 12.6113 16.8866 11.7188 18.463C9.93421 21.6154 8.11119 24.1017 7.9663 24.298C7.96629 24.298 7.96628 24.298 7.96626 24.298Z"
+                                fill="#FF364C" stroke="#FF364C" />
+                        </svg>
+                        ЛОКАЦІЯ
+                    </h4>
+                    <p>
+                        вул. В. Щавинського, 18А,
+                        <br>
+                        Київ, 02230
+                    </p>
+                </div>
+                <div class="contacts__map">
+                    <a href="https://goo.su/USfCr" target="_blank">
+                        показати на карті
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M9.69516 2.42627L0.109375 2.42627L0.109375 0.42627L12.1094 0.42627H13.1094V1.42627V13.4263H11.1094V3.84048L1.81648 13.1334L0.402268 11.7192L9.69516 2.42627Z"
+                                fill="white" />
+                        </svg>
+
+                    </a>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1508.3271104746516!2d30.592229564545214!3d50.521265389369965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d1d939e411e5%3A0xe0f1985034506fc!2z0JrQvtC80L_QsNC90LjRjyDQrdC90LXRgNCz0L7QuNC90LLQtdGB0YLQvNC-0L3RgtCw0LY!5e0!3m2!1sru!2sde!4v1723807198074!5m2!1sru!2sde"
+                        width="590" height="310" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="contacts__info">
+                    <h4>
+                        <?xml version="1.0" encoding="utf-8"?>
+                        <!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+                        <svg width="24" height="24" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.6,7.3c0.2-0.1,0.6-0.4,0.7-0.9c0.1-0.5-0.1-0.9-0.2-1.1C5.9,2.7,5.4,1.4,4.7,1.4c-0.2,0-0.7,0.1-1.4,1
+c-8.5,6.4,8.5,29.9,16.3,19.5c1.2-1.1-0.9-2.4-1.7-3.3c-1.4-1.5-2.4-1.5-3.5,0c-0.6,1.3-1.3,1.6-1.8,1.7C10.9,20.9,9,18.6,7,16.3
+c-1.7-2-2.3-3.4-2.5-4.5c-0.4-1.7,0-2.5,0.1-2.8C5.2,7.9,6.2,7.4,6.6,7.3z" stroke="#FF364C" fill="none" />
+                        </svg>
+                        ТЕЛЕФОН
+                    </h4>
+                    <a href="tel:+38 044-228-22-58">+38 044-228-22-58</a>
+                    <a href="tel:+38 044-594-51-87">+38 044-594-51-87</a>
+                </div>
+                <div class="contacts__info">
+                    <h4>
+                        <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.4257 1H2.76599C1.792 1 1 1.94468 1 3.10644V17.8514C1 19.0131 1.792 19.9578 2.76599 19.9578H20.4258C21.3997 19.9578 22.1917 19.0131 22.1917 17.8514V3.10644C22.1917 1.94468 21.3997 1 20.4257 1ZM2.76599 2.0532H20.4258C20.4908 2.0532 20.5482 2.08148 20.6092 2.09748C19.0803 3.76651 14.0107 9.29844 12.2366 11.205C12.0978 11.3542 11.874 11.5321 11.5959 11.5321C11.3178 11.5321 11.094 11.3542 10.9548 11.2045C9.18083 9.29824 4.11092 3.76601 2.58226 2.09758C2.64343 2.08158 2.70088 2.0532 2.76599 2.0532ZM1.88297 17.8514V3.10644C1.88297 3.00326 1.90905 2.90965 1.93239 2.81536C3.10257 4.09284 6.63994 7.95273 8.93361 10.4406C6.64739 12.783 3.10911 16.7843 1.92962 18.1259C1.9088 18.0363 1.88297 17.9487 1.88297 17.8514ZM20.4257 18.9046H2.76599C2.69546 18.9046 2.63276 18.8753 2.5669 18.8565C3.78572 17.4706 7.3465 13.4463 9.59254 11.1545C9.88533 11.4713 10.1528 11.7601 10.3636 11.9867C10.7275 12.3786 11.1535 12.5853 11.5959 12.5853C12.0382 12.5853 12.4642 12.3786 12.8276 11.9872C13.0386 11.7605 13.3062 11.4714 13.5992 11.1545C15.8453 13.4461 19.4056 17.4701 20.6248 18.8565C20.559 18.8753 20.4963 18.9046 20.4257 18.9046ZM21.3087 17.8514C21.3087 17.9487 21.2829 18.0363 21.2621 18.1259C20.0822 16.7836 16.5443 12.7828 14.2581 10.4406C16.5519 7.95278 20.0887 4.09323 21.2593 2.81526C21.2827 2.90955 21.3087 3.00321 21.3087 3.10639V17.8514Z"
+                                fill="white" stroke="#FF364C" />
+                        </svg>
+
+
+                        ІМЕЙЛ
+                    </h4>
+                    <a href="mailto:office@embud.com.ua">office@embud.com.ua</a>
+                </div>
+                <div class="contacts__social">
+                    <a href="#">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M36.3377 0.75569H2.74159C1.59104 0.75569 0.658203 1.69546 0.658203 2.85458V36.7007C0.658203 37.8598 1.59104 38.7996 2.74159 38.7996H20.8265V24.0663H15.9021V18.3278H20.8265V14.0873C20.8265 9.1762 23.8055 6.50132 28.1582 6.50132C30.2433 6.50132 32.0347 6.65468 32.5586 6.72601V11.8618H29.5371C27.1758 11.8618 26.7173 13.0048 26.7173 14.6686V18.3314H32.3568L31.624 24.0842H26.7156V38.7978H36.336C37.4883 38.7978 38.4211 37.8598 38.4211 36.6989V2.85279C38.4211 1.69368 37.49 0.753906 36.3377 0.753906V0.75569Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M25.7595 19.7767C25.7595 20.9807 25.4051 22.1576 24.7412 23.1587C24.0773 24.1597 23.1336 24.9399 22.0296 25.4007C20.9255 25.8614 19.7107 25.982 18.5386 25.7471C17.3666 25.5122 16.29 24.9324 15.445 24.0811C14.6 23.2298 14.0246 22.1451 13.7914 20.9643C13.5583 19.7835 13.6779 18.5595 14.1352 17.4472C14.5926 16.3349 15.367 15.3842 16.3606 14.7153C17.3542 14.0464 18.5224 13.6894 19.7174 13.6894C21.3193 13.6913 22.855 14.3332 23.9878 15.4744C25.1205 16.6156 25.7576 18.1628 25.7595 19.7767ZM38.5988 11.4067V28.1468C38.5957 30.9711 37.4806 33.6788 35.4984 35.6759C33.5161 37.673 30.8286 38.7964 28.0252 38.7996H11.4096C8.60623 38.7964 5.91863 37.673 3.93638 35.6759C1.95413 33.6788 0.839112 30.9711 0.835938 28.1468V11.4067C0.839112 8.58238 1.95413 5.87466 3.93638 3.87757C5.91863 1.88048 8.60623 0.757105 11.4096 0.753906H28.0252C30.8286 0.757105 33.5161 1.88048 35.4984 3.87757C37.4806 5.87466 38.5957 8.58238 38.5988 11.4067ZM28.7805 19.7767C28.7805 17.9708 28.2489 16.2054 27.2531 14.7038C26.2572 13.2023 24.8418 12.0319 23.1857 11.3408C21.5296 10.6497 19.7073 10.4689 17.9493 10.8212C16.1912 11.1735 14.5763 12.0432 13.3088 13.3202C12.0413 14.5972 11.1781 16.2241 10.8284 17.9954C10.4787 19.7666 10.6582 21.6025 11.3442 23.271C12.0301 24.9395 13.1918 26.3655 14.6822 27.3688C16.1726 28.3722 17.9249 28.9077 19.7174 28.9077C22.1202 28.905 24.4239 27.9421 26.123 26.2303C27.822 24.5185 28.7778 22.1976 28.7805 19.7767ZM31.8015 9.88486C31.8015 9.43338 31.6686 8.99204 31.4197 8.61664C31.1707 8.24125 30.8168 7.94866 30.4028 7.77589C29.9888 7.60311 29.5332 7.55791 29.0937 7.64599C28.6542 7.73407 28.2505 7.95148 27.9336 8.27072C27.6167 8.58997 27.4009 8.99671 27.3135 9.43952C27.2261 9.88233 27.271 10.3413 27.4424 10.7584C27.6139 11.1755 27.9043 11.5321 28.2769 11.7829C28.6496 12.0337 29.0876 12.1676 29.5357 12.1676C30.1367 12.1676 30.713 11.9271 31.1379 11.499C31.5628 11.0709 31.8015 10.4903 31.8015 9.88486Z"
+                                fill="white" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <nav class="footer__navigation">
+                <ul class="footer__nav-list navigation__list">
+                    <li>
+                        <a href="/index.html">Головна</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#services">Послуги</a>
+                    </li>
+                    <li>
+                        <a href="/projects.html">Проекти</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="copy">Copyright © Copyright Website 2024</p>
+        </div>
+    </footer>
+
+    <dialog id="mobileMenu" class="mobile__menu">
+        <nav class="mobile__menu-nav">
+            <div class="mobile__menu-header">
+                <a href="/index.html" class="header__logo logo">
+                    ЕМБУД
+                </a>
+                <button class="mobile__menu-close button">Закрити</button>
+            </div>
+            <ul class="mobile__menu-list">
+                <li><a href="/index.html">ГОЛОВНА</a></li>
+                <li><a href="/index.html#services">ПОСЛУГИ</a></li>
+                <li><a href="/projects.html">ПРОЕКТИ</a></li>
+                <li><a href="#contacts">КОНТАКТИ</a></li>
+            </ul>
+            <div class="mobile__menu-actions actions">
+                <div class="actions__lang">
+                    <a href="#">УКР</a>
+                    <a href="#">ENG</a>
+                </div>
+                <button class="actions__button button">ЗАТЕЛЕФОНУВАТИ</button>
+            </div>
+        </nav>
+    </dialog>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,3 +1,5 @@
+/* mixins */
+
 @mixin fluid-text($max: 48, $min: 16) {
     font-size: clamp(#{$min}px, #{$max / $container * 100}vw, #{$max}px);
 }
@@ -42,3 +44,5 @@
     width: $size;
     aspect-ratio: 1;
 }
+
+/* mixins */
